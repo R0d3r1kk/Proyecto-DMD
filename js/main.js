@@ -179,7 +179,7 @@
       });
     });
 
-    //funcion para abrir el modal de empresas
+  //funcion para abrir el modal de empresas
   var mod2;
   $(".btnOpenMod")
     .off("click")
@@ -204,11 +204,12 @@
       var vars = [name.val(), email.val(), spec.val(), phone.val(), msg.val()];
       if (isValidEmailAddress(email.val())) {
         $.post("php/mail.php", { form: vars }, function(data) {
-          if(data.includes("Error")){
+          if (data.includes("Error")) {
             alertify.error(data);
-          }else{
+          } else {
             alertify.success(data);
           }
+          $(".modalform").trigger("reset");
           console.log(data);
         });
       } else {
@@ -229,11 +230,38 @@
       var vars = [name.val(), email.val(), spec.val(), msg.val()];
       if (isValidEmailAddress(email.val())) {
         $.post("php/mail.php", { form: vars }, function(data) {
-          if(data.includes("Error")){
+          if (data.includes("Error")) {
             alertify.error(data);
-          }else{
+          } else {
             alertify.success(data);
           }
+          $(".modalform").trigger("reset");
+          console.log(data);
+        });
+      } else {
+        alertify.log("El email es incorrecto");
+        console.log("el email no cumple con la estructura correcta...");
+      }
+    });
+
+  $(".btnSindromeMail")
+    .off("click")
+    .on("click", function(e) {
+      e.preventDefault();
+      var name = "";
+      var email = $("#snemail");
+      var spec = "";
+      var msg = $("input[name='prof']:checked");
+      var vars = [name, email.val(), spec, msg.val()];
+      if (isValidEmailAddress(email.val())) {
+        $.post("php/mail.php", { form: vars }, function(data) {
+          if (data.includes("Error")) {
+            alertify.error(data);
+          } else {
+            alertify.success(data);
+          }
+          $("#snemail").val("");
+          $("input[name='prof']").prop("checked", false);
           console.log(data);
         });
       } else {
@@ -249,16 +277,17 @@
       var name = $("#enterprise_name");
       var email = $("#enterprise_email");
       var spec = $("#conatct_person");
-      var phone = $("#ep1").val() + "" + $("#ep2").val() + "" + $("#ep3").val() ;
+      var phone = $("#ep1").val() + "" + $("#ep2").val() + "" + $("#ep3").val();
       var ne = $('.modalEnterprise input:radio[name="ne"]:checked');
       var vars = [name.val(), email.val(), spec.val(), phone, ne.val()];
       if (isValidEmailAddress(email.val())) {
         $.post("php/mail.php", { form: vars }, function(data) {
-          if(data.includes("Error")){
+          if (data.includes("Error")) {
             alertify.error(data);
-          }else{
+          } else {
             alertify.success(data);
           }
+          $(".modalform").trigger("reset");
           console.log(data);
         });
       } else {
