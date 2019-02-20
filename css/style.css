@@ -81,8 +81,8 @@ header .top-bar .social li {
 
 header .top-bar .social li a {
   color: #fff;
-  padding: 10px;
-  width: 40px;
+  padding: 30px;
+  width: 1x;
   display: inline-block;
 }
 
@@ -502,7 +502,11 @@ header .navbar .dropdown-menu a {
 }
 
 .section {
-  padding: 7em 0;
+    padding: 2em 0;
+    padding-top: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+    padding-left: 2em;
 }
 
 .cta-link {
