@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 400, 700" rel="stylesheet">
+     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300, 400, 700" rel="stylesheet">
 
     <link rel="stylesheet" href="css/bootstrap.css">
     <link rel="stylesheet" href="css/animate.css">
@@ -17,13 +17,14 @@
     <link rel="stylesheet" href="fonts/ionicons/css/ionicons.min.css">
     <link rel="stylesheet" href="fonts/fontawesome/css/font-awesome.min.css">
     <link rel="stylesheet" href="fonts/flaticon/font/flaticon.css">
-
+    <link rel="stylesheet" href="css/alertify.core.css">
+    <link rel="stylesheet" href="css/alertify.bootstrap.css">
 
     <!-- Theme Style -->
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    
+
     <header role="banner">
       <div class="top-bar">
         <div class="container">
@@ -38,17 +39,16 @@
             </div>
             <div class="col-md-6 col-sm-6 col-7 text-right">
               <p class="mb-0">
-                <label for="search2"><strong><font color="White">Buscar</font></strong></label>
                 <input type="search" name="search" id="search">
+                <label for="search2"><strong><font color="White"><br>Buscar</font></strong></label>
                 <ul class="search-results" id="results"></ul>
-</p>
+              </p>
             </div>
           </div>
         </div>
       </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container">
-          <img src="img/logo-directorio-medico-digital.png" width="131" height="57" alt=""/>
+        <div class="container"> <a href="index.html"><img src="img/logo-directorio-medico-digital.png"  width="131" height="57" alt=""></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -67,9 +67,12 @@
 
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="doctors.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctores</a>
-	            <div class="dropdown-menu list" aria-labelledby="dropdown05">
-                  <a class="dropdown-item" href="doctors.html">Alergólogos</a>
+               <div>
+					<a class="nav-link dropdown-toggle" href="doctors.html" >Especialistas</a>
+			   </div>
+					
+	             <div class="dropdown-menu list" aria-labelledby="dropdown05">
+                  <a class="dropdown-item" href="">Alergólogos</a>
                   <a class="dropdown-item" href="#">Angiólogos</a>
                   <a class="dropdown-item" href="#">Cardiólogos</a>
                   <a class="dropdown-item" href="#">Dentistas - Odontólogos</a>
@@ -77,27 +80,25 @@
                   <a class="dropdown-item" href="#">Endocrinólogos</a>
                   <a class="dropdown-item" href="#">Gastroenterólogos</a>
                   <a class="dropdown-item" href="#">Geriatras</a>
-                  <a class="dropdown-item" href="#">Ginecólogos oncológicos</a>
+                  <a class="dropdown-item" href="#">Ginecólogos</a>
                   <a class="dropdown-item" href="#">Hematólogos</a>
-                  <a class="dropdown-item" href="#">Homeópatas</a>
-                  <a class="dropdown-item" href="#">Internistas</a>
-                  <a class="dropdown-item" href="#">Médicos estéticos</a>
+                  <a class="dropdown-item" href="Internista.html">Internistas</a>
+                  <a class="dropdown-item" href="#">Médicos Estéticos</a>
+	              <a class="dropdown-item" href="General.html">Médicos Generales</a>
                   <a class="dropdown-item" href="#">Nefrólogos</a>
                   <a class="dropdown-item" href="#">Neumólogos</a>
-                  <a class="dropdown-item" href="#">Neurólogos</a>
                   <a class="dropdown-item" href="#">Nutriólogos</a>
                   <a class="dropdown-item" href="#">Oftalmólogos</a>
-                  <a class="dropdown-item" href="#">Oncólogos</a>                  
+                  <a class="dropdown-item" href="Oncologos.html">Oncólogos</a>                  
                   <a class="dropdown-item" href="#">Optometristas</a>                 
                   <a class="dropdown-item" href="#">Otorrinolaringólogos</a>
                   <a class="dropdown-item" href="#">Pediatras</a>
                   <a class="dropdown-item" href="#">Podólogos</a>
                   <a class="dropdown-item" href="#">Proctólogos</a>
                   <a class="dropdown-item" href="#">Psicólogos</a>
-                  <a class="dropdown-item" href="#">Psiquiatras</a>
-			            <a class="dropdown-item" href="#">Reumatólogos</a>
+                  <a class="dropdown-item" href="Psiquiatra.html">Psiquiatras</a>
+	              <a class="dropdown-item" href="#">Reumatólogos</a>
                   <a class="dropdown-item" href="#">Urólogos</a>
-                  <a class="dropdown-item" href="#">Practitioner</a>
                 </div>
               </li>
               <li class="nav-item">
@@ -114,15 +115,15 @@
     </header>
     <!-- END header -->
 
-    
+
     <section class="home-slider inner-page owl-carousel">
       <div class="slider-item" style="background-image: url('img/blog.jpg');">
-        
+
         <div class="container">
           <div class="row slider-text align-items-center">
             <div class="col-md-7 col-sm-12 element-animate">
-              <h1><strong><font color="Black">BLOG</font></strong></h1>
-              <p>Conoce los temas médicos más comunes, a través de las palabras de nuestra red de especialistas</p>
+              <h1><strong><font color="Black"><!--BLOG--></font></strong></h1>
+              <p><!--Conoce los temas médicos más comunes, a través de las palabras de nuestra red de especialistas--></p>
             </div>
           </div>
         </div>
@@ -140,9 +141,8 @@
               <img src="img/sindrome-metabolico.jpg" alt="Image Placeholder" class="img-fluid">
               <div class="media-body">
                 <span class="meta-post">Diciembre 9, 2018</span>
-                <h3 class="mt-0 text-black"><a href="#" class="text-black">Sindrome Metabolico</a></h3>
-                <h6>Como dato muy importante para la población es la existencia de la obesidad central o
-                  llamada visceral o de tipo masculino con vientre prominente</h6>
+                <h3 class="mt-0 text-black"><a href="Sindrome Metabolico.html" class="text-black">Sindrome Metabolico</a></h3>
+                <h6>Un grupo de factores de riesgo que aumentan las probabilidades de sufrir enfermedades del corazón, diabetes, ataques cerebrales, sobrepeso, entre otras.</h6>
                 <p class="clearfix">
                   <a href="Sindrome Metabolico.html" class="float-left">Mas Informacion</a>
 
@@ -155,7 +155,7 @@
               <img src="img/detox.jpg" alt="Image Placeholder" class="img-fluid">
               <div class="media-body">
                 <span class="meta-post">Diciembre 9, 2018</span>
-                <h3 class="mt-0 text-black"><a href="#" class="text-black">Detox</a></h3>
+                <h3 class="mt-0 text-black"><a href="Detex.html" class="text-black">Detox</a></h3>
                 <h6>Las dietas detox te prometen depurar, limpiar y desintoxicar tu organismo a través de jugos de frutas y verduras con una ingesta calórica restrictiva (desde 1200 hasta 700 kcal al día).</h6>
                 <p class="clearfix">
                   <a href="Detex.html" class="float-left">Mas Informacion</a>
@@ -169,7 +169,7 @@
               <img src="img/rodilla complicaciones blog.png" alt="Image Placeholder" class="img-fluid">
               <div class="media-body">
                 <span class="meta-post">Diciembre 19, 2018</span>
-                <h3 class="mt-0 text-black"><a href="#" class="text-black">Complicacion Protesis de Rodilla</a></h3>
+                <h3 class="mt-0 text-black"><a href="Rodilla complicaciones.html" class="text-black">Complicacion Protesis de Rodilla</a></h3>
                 <h6>Es comun que mis pacientes en Clinica de Rodillas Dr Diaz Campuzano, me pregunten ¿Que complicaciones se pueden presentar al operarme?</h6>
                 <p class="clearfix">
                   <a href="Rodilla complicaciones.html" class="float-left">Mas informacion</a>
@@ -183,10 +183,10 @@
         <div class="row mb-5">
           <div class="col-md-4 element-animate">
             <div class="media d-block media-custom text-left">
-              <img src="img/img_thumb_1.jpg" alt="Image Placeholder" class="img-fluid">
+              <img src="img/kickboxing corta.jpg" alt="Image Placeholder" class="img-fluid">
               <div class="media-body">
                 <span class="meta-post">Diciembre 19, 2018</span>
-                <h3 class="mt-0 text-black"><a href="#" class="text-black">LESIONES MAS FRECUENTES EN EL KICKBOXING.</a></h3>
+                <h3 class="mt-0 text-black"><a href="Lesiones Kick Boxin.html" class="text-black">LESIONES MAS FRECUENTES EN EL KICKBOXING.</a></h3>
                 <h6>Uno de los deportes de contacto que mas ha tenido auge en los últimos años es
                   el kickboxing,</h6>
                 <p class="clearfix">
@@ -198,10 +198,10 @@
           </div>
           <div class="col-md-4 element-animate">
             <div class="media d-block media-custom text-left">
-              <img src="img/img_thumb_2.jpg" alt="Image Placeholder" class="img-fluid">
+              <img src="img/vivido engañado corta.jpg" alt="Image Placeholder" class="img-fluid">
               <div class="media-body">
                 <span class="meta-post">Diciembre 19, 2018</span>
-                <h3 class="mt-0 text-black"><a href="#" class="text-black">HEMOS VIVIDO ENGAÑADOS.</a></h3>
+                <h3 class="mt-0 text-black"><a href="Vivido engañados.html" class="text-black">HEMOS VIVIDO ENGAÑADOS.</a></h3>
                 <h6>La resonancia magnética no identifica todas las patologías en la rodilla.<br><br><br></h6>
                 <p class="clearfix">
                   <a href="Vivido engañados.html" class="float-left">Mas informacion</a>
@@ -215,14 +215,14 @@
               <img src="img/celulas madre Blog - index.jpg" alt="Image Placeholder" class="img-fluid">
               <div class="media-body">
                 <span class="meta-post">Diciembre 26, 2018</span>
-                <h3 class="mt-0 text-black"><a href="#" class="text-black">CELULAS MADRE… ¿SE USAN EN EL TRATAMIENTO DE DESGASTE DE RODILLA?</a></h3>
+                <h3 class="mt-0 text-black"><a href="Celulas Madre.html" class="text-black">CELULAS MADRE… ¿SE USAN EN EL TRATAMIENTO DE DESGASTE DE RODILLA?</a></h3>
                 <p></p>
                 <p class="clearfix">
                   <a href="Celulas Madre.html" class="float-left">Mas Informacion<br><br></a>
 
                 </p>
               </div>
-            </div> 
+            </div>
           </div>
         </div>
 
@@ -243,7 +243,7 @@
         </div>
       </div>
     </section>
-  
+
 
     <a href="#" class="cta-link element-animate btnPertence" data-animate-effect="fadeIn">
       <span class="sub-heading"></span>
@@ -256,7 +256,7 @@
         <div class="row mb-5 element-animate">
 <div class="col-md-3 mb-5">
   <h3>Contacto</h3>
-  <p class="mb-5">Tlacotalpan #79 <br> 
+  <p class="mb-5">Tlacotalpan #79 <br>
     Interior 102 <br> Colonia Roma Sur <br>Cuauhtemoc </p>
  </div>
 	<div class="col-md-3 mb-5">
@@ -265,7 +265,7 @@
             <p>72-58-41-01 <br> 72-58-40-92 <br></p></p>
              </ul>
            </div>
-		  
+
 
 		   <div class="col-md-3 mb-5">
             <h3>Correo Electronico</h3>
@@ -273,10 +273,10 @@
              <p class="mb-5"><a href="mailto:info@yourdomain.com">info@directoriomedicodigital.com.mx</a>
            </ul>
           </div>
-		  
-		  
-			
-			
+
+
+
+
         </div>
 
         <div class="row pt-md-3 element-animate">
@@ -315,12 +315,12 @@
                 <label for="appointment_email" class="text-black">Correo Electronico</label>
                 <input type="text" class="form-control" id="appointment_email">
               </div>
-				
+
               <!--<div class="form-group">
                 <label for="appointment_email" class="text-black">Especialidad</label>
                 <input type="text" class="form-control" id="appointment_spec">
               </div>
-				
+
               <div class="form-group">
                 <label for="appointment_email" class="text-black">Telefono</label>
                 <input type="text" class="form-control" id="appointment_phone">
@@ -334,7 +334,7 @@
               </div>
             </form>
           </div>
-          
+
         </div>
       </div>
     </div>
@@ -345,7 +345,11 @@
     <script src="js/owl.carousel.min.js"></script>
     <script src="js/bootstrap-datepicker.js"></script>
     <script src="js/jquery.timepicker.min.js"></script>
+    <!-- librerias para la ventana modal -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/jquery-modal/0.9.1/jquery.modal.min.css" />
     <script src="js/jquery.waypoints.min.js"></script>
+    <script src="js/alertify.js"></script>
     <script src="js/main.js"></script>
   </body>
 </html>

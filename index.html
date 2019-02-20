@@ -32,7 +32,7 @@
       <div class="row">
             <div class="col-md-6 col-sm-6 col-5">
               <ul class="social list-unstyled">
-                <li><a href="https://www.facebook.com/recomendacionesmedicas/"><class  span class="fa fa-facebook-square fa-2x"></span></a></li>
+                <li><a href="https://www.facebook.com/recomendacionesmedicas/"><span class="fa fa-facebook fa-2x"></span></a></li>
                 <li><a href="https://www.youtube.com/channel/UC9BfJPCCsZ9cRk6HfRFF-tA" class="fa-4x"><span class="fa fa-youtube-play fa-100px fa-2x"></span></a></li>
        
                 <li><a href="https://www.instagram.com/directorio_medico/" class="fa-2x">
@@ -42,8 +42,8 @@
             </div>
             <div class="col-md-6 col-sm-6 col-7 text-right">
               <p class="mb-0">
-                <label for="search2"><strong><font color="White">Buscar</font></strong></label>
-                <input type="search" name="search2" id="search">
+                <input type="search" name="search" id="search">
+                <label for="search2"><strong><font color="White"><br>Buscar</font></strong></label>
                 <ul class="search-results" id="results"></ul>
               </p>
             </div>
@@ -51,7 +51,7 @@
         </div>
       </div>
       <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container"> <img src="img/logo-directorio-medico-digital.png" width="131" height="57" alt=""/>
+                       <div class="container"> <a href="index.html"><img src="img/logo-directorio-medico-digital.png"  width="131" height="57" alt=""></a>
 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarsExample05" aria-controls="navbarsExample05" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -62,17 +62,20 @@
                 <a class="nav-link active" href="index.html">Inicio</a>
               </li>
               <li class="nav-item dropdown">
-<div class="dropdown-menu" aria-labelledby="dropdown04">
+            <div class="dropdown-menu" aria-labelledby="dropdown04">
               <a class="dropdown-item" href="#">Institute</a>
               <a class="dropdown-item" href="#">Departments</a>
               <a class="dropdown-item" href="services.html">Services</a>
-              </div>
+            </div>
 
               </li>
               <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="Detex.html" id="dropdown05" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Doctores</a>
-                <div class="dropdown-menu" aria-labelledby="dropdown05">
-                   <a class="dropdown-item" href="doctors.html">Alergólogos</a>
+               <div>
+					<a class="nav-link dropdown-toggle" href="doctors.html" >Especialistas</a>
+			   </div>
+					
+	             <div class="dropdown-menu list" aria-labelledby="dropdown05">
+                  <a class="dropdown-item" href="">Alergólogos</a>
                   <a class="dropdown-item" href="#">Angiólogos</a>
                   <a class="dropdown-item" href="#">Cardiólogos</a>
                   <a class="dropdown-item" href="#">Dentistas - Odontólogos</a>
@@ -80,28 +83,25 @@
                   <a class="dropdown-item" href="#">Endocrinólogos</a>
                   <a class="dropdown-item" href="#">Gastroenterólogos</a>
                   <a class="dropdown-item" href="#">Geriatras</a>
-                  <a class="dropdown-item" href="#">Ginecólogos oncológicos</a>
+                  <a class="dropdown-item" href="#">Ginecólogos</a>
                   <a class="dropdown-item" href="#">Hematólogos</a>
-                  <a class="dropdown-item" href="#">Homeópatas</a>
-                  <a class="dropdown-item" href="#">Internistas</a>
-                  <a class="dropdown-item" href="#">Médicos estéticos</a>
+                  <a class="dropdown-item" href="Internista.html">Internistas</a>
+                  <a class="dropdown-item" href="#">Médicos Estéticos</a>
+	              <a class="dropdown-item" href="General.html">Médicos Generales</a>
                   <a class="dropdown-item" href="#">Nefrólogos</a>
                   <a class="dropdown-item" href="#">Neumólogos</a>
-                  <a class="dropdown-item" href="#">Neurólogos</a>
                   <a class="dropdown-item" href="#">Nutriólogos</a>
                   <a class="dropdown-item" href="#">Oftalmólogos</a>
-                  <a class="dropdown-item" href="#">Oncólogos</a>                  
+                  <a class="dropdown-item" href="Oncologos.html">Oncólogos</a>                  
                   <a class="dropdown-item" href="#">Optometristas</a>                 
                   <a class="dropdown-item" href="#">Otorrinolaringólogos</a>
                   <a class="dropdown-item" href="#">Pediatras</a>
                   <a class="dropdown-item" href="#">Podólogos</a>
                   <a class="dropdown-item" href="#">Proctólogos</a>
                   <a class="dropdown-item" href="#">Psicólogos</a>
-                  <a class="dropdown-item" href="#">Psiquiatras</a>
-			      <a class="dropdown-item" href="#">Reumatólogos</a>
+                  <a class="dropdown-item" href="Psiquiatra.html">Psiquiatras</a>
+	              <a class="dropdown-item" href="#">Reumatólogos</a>
                   <a class="dropdown-item" href="#">Urólogos</a>
-                  <a class="dropdown-item" href="#">Practitioner</a>
-
                 </div>
               </li>
               <li class="nav-item">
@@ -118,26 +118,26 @@
     </header>
     <!-- END header -->
     
-    <section class="home-slider owl-carousel">
-      <div class="slider-item" style="background-image: url('img/banner1.jpg');">
+    <section class="home-slider owl-carousel owl-loaded active">
+      <div class="slider-item" style="background-image: url('img/Index1.jpg');">
         
         <div class="container">
-          <div class="row slider-text align-items-center">
+          <div class="row slider-text align-items-center embed-responsive">
             <div class="col-md-7 col-sm-12 element-animate">
-              <h1>CONTACTANOS</h1>
-              <p><h3><font color="White">Te gustaría saber mas de Directorio Medico Digital, manda un mensaje y nos pondremos en contacto</font</h3></p>
+              <h1><!--CONTACTANOS--><br></h1>
+              <p><h3><font color="White"><!--Te gustaria saber de Directorio Medico Digital, manda mensaje y nos pondremos en contacto--><br><br><br><br><br><br><br><br><br><br><br><br></font</h3></p>
             </div>
           </div>
         </div>
 
       </div>
 
-      <div class="slider-item" style="background-image: url('img/banner2.jpg');">
+      <div class="slider-item" style="background-image: url('img/Index2.jpg');">
         <div class="container">
           <div class="row slider-text align-items-center">
-            <div class="col-md-7 col-sm-12 element-animate">
+            <div class="col-md-7 col-sm-12 element-animate embed-responsive">
              <!-- <h1>Los mejores médicos al alcance de tus manos, conoce de su trayectoria y concreta una cita para tu valoración</h1> -->
-              <p><p><h3><font color="White">Los mejores médicos al alcance de tus manos, conoce de su trayectoria y concreta una cita para tu valoración</font</h3></p>
+              <p><p><h3><font color="White"> <!--Los mejores médicos al alcance de tus manos,conoce de su trayectoria y concreta una cita para tu valoración.--><br><br><br><br><br><br><br><br><br><br><br></font</h3></p>
             </div>
           </div>
         </div
@@ -155,8 +155,8 @@
       <div class="container">
         <div class="row justify-content-center mb-5 element-animate">
           <div class="col-md-8 text-center mb-5">
-            <h2 class="text-uppercase heading border-bottom mb-4">POR QUÉ ELEGIRNOS</h2>
-            <p class="mb-0 lead"><font color="Black">¡POR QUE NO NOS QUEDAMOS SENTADOS ESPERANDO A TUS PACIENTES, LOS ENCONTRAMOS! </font</p>
+            <h2 class="text-uppercase heading border-bottom mb-4"><br><br>POR QUÉ ELEGIRNOS</h2>
+            <p class="mb-0 lead"><font color="Black">Porque no nos quedamos sentados esperando a tus pacientes.¡Nosotros te los llevamos a tu consultorio!</font</p>
           </div>
         </div>
         <div class="row align-items-center">
@@ -169,16 +169,16 @@
               <div class="col-lg-6 col-md-6 col-sm-6 col-6">
  <div class="media d-block media-feature text-center"> <img src="img/user-md.png" width="72" height="70" alt=""/>
 			    <div class="media-body">
-                    <h3 class="mt-0 text-black">Amenities </h3>
+                    <h3 class="mt-0 text-black">Medicos a tu alcance </h3>
                     <p>Encuentra a un médico especialista cerca de ti y elige al que mayor confianza te genere. </p>
               </div>
                 </div>
               </div>
               <div class="col-lg-6 col-md-6 col-sm-6 col-6">
-             <div class="media d-block media-feature text-center">   <img src="img/user.jpg" alt="" width="75" height="75"/>
+             <div class="media d-block media-feature text-center">   <img src="img/user.png" alt="" width="75" height="75"/>
                 <div class="media d-block media-feature text-center">
 <div class="media-body">
-                <h3 class="mt-0 text-black">Medical Services</h3>
+                <h3 class="mt-0 text-black">Publicidad digital</h3>
                     <p>Te posicionamos en los principales motores de búsqueda y en las redes sociales.</p>
                   </div>
                 </div>
@@ -189,7 +189,7 @@
               <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                 <div class="media d-block media-feature text-center"> <img src="img/building_3-512.png" width="72" height="72" alt=""/>
                   <div class="media-body">
-                    <h3 class="mt-0 text-black">Patient Services</h3>
+                    <h3 class="mt-0 text-black">Campañas de salud</h3>
                     <p>Genera una cultura de prevención en los colaboradores de manera gratuita.</p>
                   </div>
                 </div>
@@ -197,7 +197,7 @@
               <div class="col-lg-6 col-md-6 col-sm-6 col-6">
                 <div class="media d-block media-feature text-center"> <img src="img/graduation-cap.png" width="64" height="64" alt=""/>
                   <div class="media-body">
-                    <h3 class="mt-0 text-black">Expert Doctors</h3>
+                    <h3 class="mt-0 text-black">Platicas en escuelas</h3>
                     <p>Te ayudamos a generar una cultura de bienes y atención medica oportuna en tu comunidad de manera gratuita.</p>
                   </div>
                 </div>
@@ -214,9 +214,9 @@
       <div class="container">
         <div class="row justify-content-center mb-5 element-animate">
           <div class="col-md-8 text-center mb-5">
-            <h2 class="text-uppercase heading border-bottom mb-4">SOLO MEDICOS QUE SON RECOMENDADOS POR PACIENTES<br>
+            <h2 class="text-uppercase heading border-bottom mb-4">MÉDICOS CERTIFICADOS<br>
             </h2>
-            <p class="mb-0 lead"><font color="Black">Directorio Medico Digital es el único directorio medico mexicano que alberga en sus filas no solo a los médicos con real calidad si no que segmentamos a los que son recomendados por sus propios pacientes, aquellos que su consulta se basa en recomendaciones, son médicos de alta calidad, que han tenido y tienen un desarrollo real clínico y quirúrgico con ética y buenas praxis. </font </p>
+            <p class="mb-0 lead"><font color="Black">Directorio Médico Digital (DMD), es el único directorio médico mexicano que alberga a médicos especialistas de alta calidad y que son recomendados por sus propios pacientes por recibir excelentes experiencias en atención médica.</font </p>
           </div>
         </div>
         <div class="row element-animate">
@@ -228,7 +228,7 @@
                   <h3 class="mt-0 text-black">Dra. Jessica de Lira Guerrero</h3>
                   <p>Médico Psiquiatra<br><br></p>
                   
-     <a href="Sindrome Metabolico.html"  class="float-center"><center>Mas Informacion<br><br></center> </a> 
+     <a href="Dr Lira.html"  class="float-center"><center><br>Mas Informacion<br><br></center> </a> 
                   </p>
                 </div>
               </div>
@@ -240,7 +240,7 @@
                   <h3 class="mt-0 text-black">Dr. Mario G. Colina Barranco Gonzalez</h3>
                   <p>Médico Internista<br><br></p>
                   <p>
-           <a href="Sindrome Metabolico.html"  class="float-center"><center>Mas Informacion</center> </a>  
+           <a href="Dr Colina.html"  class="float-center"><center>Mas Informacion</center> </a>  
                   </p>
                 </div>
               </div>
@@ -252,7 +252,7 @@
                   <h3 class="mt-0 text-black">Dr. Alberto Vazquez Palacios</h3>
                   <p>Médico Estética</p>
                   <p>
-     <a href="Sindrome Metabolico.html"  class="float-center"><center>Mas Informacion<br><br><br></center> </a> 
+     <a href="Dr Vazquez .html" class="float-center"><center>Mas Informacion<br><br><br></center> </a> 
                   </p>
                 </div>
               </div>
@@ -264,7 +264,7 @@
                   <h3 class="mt-0 text-black">Dr. Didier Olea Gutiérrez </h3>
                   <p>Médico General<br><br></p>
                   
-     <a href="Sindrome Metabolico.html"  class="float-center"><center>Mas Informacion<br><br></center> </a> 
+     <a href="Dr Didier.html"  class="float-center"><center>Mas Informacion<br><br></center> </a> 
                   </p>
                 </div>
               </div>
@@ -277,7 +277,7 @@
                   <h3 class="mt-0 text-black">Dra. Roxana Azpe Montes de Oca</h3>
                   <p>Médico Bariatra</p>
                   <p>
-     <a href="Sindrome Metabolico.html"  class="float-center"><center>Mas Informacion<br></center> </a> 
+     <a href="Dr Azpe.html"  class="float-center"><center><br/>Mas Informacion<br></center> </a> 
                   </p>
                 </div>
               </div>
@@ -289,37 +289,36 @@
                   <h3 class="mt-0 text-black">Dra. Sofia Durán Hernández </h3>
                   <p class="overflow-ellipsis">Especialista en Medicina de Rehabilitación </p>
                   <p>
-     <a href="Sindrome Metabolico.html"  class="float-center"><center>Mas Informacion</center> </a> 
+     <a href="Dr Sofia.html"  class="float-center"><center><br/>Mas Informacion</center> </a> 
+                  </p>
+                </div>
+              </div>
+            </div>
+            <div>
+             <div class="media d-block media-custom text-center">
+                <img src="img/doctores cv/Dr Colin.png" alt="Image Placeholder" class="img-fluid">
+                <div class="media-body">
+                  <h3 class="mt-0 text-black">Dr. Josémaria Colin Carrasco</h3>
+                  <p>Cirugía Oncológica </p>
+		 <a href="Dr Colin.html"  class="float-center"><center><br/>Mas Informacion</center> </a> 
+                  </p>
+					
+                  <p>
+
                   </p>
                 </div>
               </div>
             </div>
             <div>
               <div class="media d-block media-custom text-center">
-                <img src="img/doctor_3.jpg" alt="Image Placeholder" class="img-fluid">
+                <img src="img/doctores cv/sin foto.png" alt="Image Placeholder" class="img-fluid">
                 <div class="media-body">
-                  <h3 class="mt-0 text-black">Dr. Jean Doe</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+                  <h3 class="mt-0 text-black">Dr. Oscar Ciro Orozco Cruz</h3>
+                  <p>Médico Nutrición Clínica Aplicada</p>
                   <p>
-                    <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
-                    <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
-                    <a href="#" class="p-2"><span class="fa fa-linkedin"></span></a>
+          <a href="Dr Oscar.html"  class="float-center"><center><br/>Mas Informacion</center> </a> 
                   </p>
-                </div>
-              </div>
-            </div>
-            <div>
-              <div class="media d-block media-custom text-center">
-                <img src="img/doctor_4.jpg" alt="Image Placeholder" class="img-fluid">
-                <div class="media-body">
-                  <h3 class="mt-0 text-black">Dr. Jessica Doe</h3>
-                  <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
-                  <p>
-                    <a href="#" class="p-2"><span class="fa fa-facebook"></span></a>
-                    <a href="#" class="p-2"><span class="fa fa-twitter"></span></a>
-                    <a href="#" class="p-2"><span class="fa fa-linkedin"></span></a>
-                  </p>
-                </div>
+                </div>   
               </div>
             </div>
 
@@ -334,8 +333,9 @@
       <div class="container">
         <div class="row text-center justify-content-center">
           <div class="col-md-10">
-            <h2 class="heading element-animate">CAMPAÑAS GRATUITAS EN MICRO, PEQUEÑAS, MEDIANAS Y GRANDES EMPRESAS</h2>
-            <p class="sub-heading element-animate mb-5">Donde realizaremos estudios para detectar enfermedades articulares, metabólicas o cardiovasculares; concluyendo con pláticas para aprender a prevenir dichas afecciones a la salud siendo avalados por especialistas y por la Secretaria de Trabajo y Previsión Social.</p>
+            <h2 class="heading element-animate">CAMPAÑAS DE SALUD GRATUITAS EN PYME´S Y GRANDES EMPRESAS</h2>
+            <p class="sub-heading element-animate mb-5">En DMD, nos preocupamos por la salud de la sociedad mexicana y por ello lanzamos nuestras <strong>Campañas de Salud</strong> DMD totalmente <strong>Gratis</strong>, donde se realizan estudios para detectar enfermedades articulares, metabólicas o cardiovasculares, entre otros.Las <strong>Campañas de Salud</strong> DMD están avaladas por la Secretaria de Trabajo y Previsión Social.
+             </p>
             <p class="element-animate"><a href="#" class="btn btn-primary btn-lg btnOpenMod">Solicitar Campaña</a></p>
           </div>
         </div>
@@ -412,7 +412,7 @@
 
             <div>
               <div class="media d-block media-custom text-left">
-                <img src="img/img_thumb_1.jpg" alt="Image Placeholder" class="img-fluid">
+                <img src="img/vivido engañado corta.jpg" alt="Image Placeholder" class="img-fluid">
                 <div class="media-body">
                   <span class="meta-post">Diciembre 19, 2018</span>
                   <h3 class="mt-0 text-black"><a href="#" class="text-black">Hemos Vivido Engañados.</a></h3>
@@ -576,7 +576,7 @@
             <h5 class="modal-title" id="modalAppointmentLabel">Formulario</h5>
           </div>
           <div class="modal-body">
-            <form action="#" class="modalform">
+            <form id="idformulario" action="#" class="modalform">
               <div class="form-group">
                 <label for="appointment_name" class="text-black">Nombre de la compañia</label>
                 <input type="text" class="form-control" id="enterprise_name">
@@ -605,9 +605,18 @@
                 <input type="radio" name="ne" value="100+"> mas de 100<br> 
               </div>
               <div class="form-group">
-                <input type="button" value="Enviar Mensaje" class="btn btn-primary btnEMail">
+                <input type="button" onclick="myFunction()" value="Enviar Mensaje" class="btn btn-primary btnEMail">
+
               </div>
             </form>
+			  
+			  <script>
+               function myFunction() {
+               document.getElementById("idformulario").reset();
+               }
+             </script>
+			  
+			  
           </div>
           
         </div>
